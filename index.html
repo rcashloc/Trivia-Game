@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<!--  Author: Ryker Ashlock
+      Created: 1/7/2016
+      Updated: 1/12/2016
+-->   
+	
+	<head>
+		<title>Trivia Game</title>
+		
+		<meta charset="utf-8">
+		<meta name="author" content="Ryker Ashlock">
+		<meta name="description" content="my first web page">
+		<meta name="keywords" content="page,first,web,webpage,practice,example">
+
+		<link href="css/grid.css" rel="stylesheet" type="css/text">
+		<link href="css/styles.css" rel="stylesheet" type="css/text">
+		
+		
+	</head>
+
+	<body class="grid">
+		<header class="group">
+			<h1 class="col col-100">My Trivia Game</h1>
+			<p class="col col-100">Game Instructions go here</p>
+		</header>
+		<main class="group">
+			<form class="group" onsubmit="return">
+				<section class="col col-100">
+					<p class="col col-100">This is question one</p>
+					<input type="radio" class="col col-5" name="q1" id="q1-a" value="correct">
+					<label class="col col-95" for="q1-a">
+					a) this is the correct answer</label>
+					<input type="radio" class="col col-5" name="q1" id="q1-b" value="wrong">
+					<label class="col col-95" for="q1-a">
+					b) dont know about this one</label>
+					
+					<script>
+					function chkQuiz(){
+						window.alert("asdf");
+						for(i=1;i <= 20;i++){
+							var choices = document.getElementsByName("q"+i);
+		
+							for(j=0; j < choices.length; j++){
+								/*var selection = choices[j];
+			
+									if(selection.value == "correct" && selection.checked){
+						window.alert("good job!");
+			}else if(selection.value == "wrong" && selection.checked){
+				window.alert("ASDFASDFAFSD	");
+			}
+		*/}//end for j
+	}//end for i
+					}
+					</script>
+				</section>
+				
+				<button type="button" onclick="chkQuiz();">check my Score</button>
+				</form>
+		</main>
+		<footer class="group">
+			<h5 class="col col-100">Copyright &copy; 2016 - Designed by <a href="mailto:rcashloc@stu.tulsatech.org">Ryker Ashlock</a></h5> 
+		</footer>
+	</body>
+
+</html>
